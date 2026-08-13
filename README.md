@@ -1,42 +1,58 @@
 ﻿# CPP_04
 
-C++ Module 04 from 42: polymorphism, abstract classes, and interfaces.
+Modulo C++ 04 de 42: polimorfismo, clases abstractas e interfaces.
 
 ## Stack
 
 - School: 42
-- Primary language: C/C++
-- Scope: single repository per project
+- Lenguaje principal: C++98
+- Alcance: un repositorio por proyecto
 
-## Project Layout
+## Estructura
 
-| Exercise | Path |
-|---|---|
-| ex00 | ./ex00 |
-| ex01 | ./ex01 |
-| ex02 | ./ex02 |
+| Ejercicio | Ruta | Binario |
+|---|---|---|
+| ex00 | ./ex00 | Animal |
+| ex01 | ./ex01 | Animal |
+| ex02 | ./ex02 | Animal |
 
-## How To Run
+## Como Ejecutarlo
 
-Build one exercise at a time:
+Compila y ejecuta cada ejercicio por separado:
+
+### ex00
 
 ~~~bash
 cd ex00
 make
-./<binary_name>
+./Animal
 ~~~
 
-Repeat the same flow for: ex00, ex01, ex02
+### ex01
 
-## Testing
+~~~bash
+cd ex01
+make
+./Animal
+~~~
 
-No dedicated test script detected in the repository root.
+### ex02
 
-## Notes
+~~~bash
+cd ex02
+make
+./Animal
+~~~
 
-- This repository is maintained as part of a 42 portfolio.
-- Build commands are intentionally simple to keep evaluation reproducible.
+## Pruebas
 
-## Author
+No se detectaron scripts de testing dedicados en la raiz.
+
+## Notas
+
+- Este repositorio forma parte del portfolio de 42.
+- Los comandos estan orientados a ejecucion local para revision y evaluacion.
+
+## Autora
 
 anapaulapgavilan
