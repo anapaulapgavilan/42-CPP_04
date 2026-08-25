@@ -4,6 +4,21 @@
 
 42 School C++ module 04: polymorphism, abstract classes, and interfaces.
 
+## About This Project
+
+### What It Does
+
+This module introduces polymorphism through an "Animal" hierarchy (Dog, Cat, WrongAnimal, WrongCat) and later a "Brain"-holding version of the same classes, all interacted with through base-class pointers/references.
+
+Exercises in this module:
+- ex00: virtual vs. non-virtual makeSound() on Animal/Dog/Cat vs. the intentionally broken WrongAnimal/WrongCat, to expose what happens without a virtual destructor/method.
+- ex01: gives each Animal a dynamically allocated Brain, forcing correct deep-copy semantics in constructors/destructors.
+- ex02: introduces an abstract AAnimal base class that cannot be instantiated directly, only through Dog/Cat.
+
+### Purpose
+
+It evaluates true runtime polymorphism (virtual functions, virtual destructors, abstract classes) and the memory-safety pitfalls of deleting derived objects through a base pointer without them.
+
 ## Stack
 
 - School: 42
@@ -19,6 +34,8 @@
 | ex02 | ./ex02 | Animal |
 
 ## How to Run
+
+Prerequisites: `make` and a C++98-capable compiler (`g++` or `clang++`).
 
 Compile and run each exercise separately:
 
