@@ -35,6 +35,12 @@ It evaluates true runtime polymorphism (virtual functions, virtual destructors, 
 - Deep-copy semantics for dynamically allocated Brain members
 - Abstract base class that cannot be instantiated directly
 
+## Review Focus
+
+- Look for virtual destructors and virtual methods where polymorphic deletion or dispatch is expected.
+- Review deep-copy handling for Brain ownership to avoid shared mutable state and leaks.
+- Notice the contrast between correct polymorphism and the intentionally wrong hierarchy.
+
 ## Structure
 
 | Exercise | Path | Binary |
