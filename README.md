@@ -25,6 +25,16 @@ It evaluates true runtime polymorphism (virtual functions, virtual destructors, 
 - Primary language: C++98
 - Scope: one repository per project
 
+## Skills Demonstrated
+
+`Polymorphism` | `Virtual methods` | `Abstract classes` | `Deep copy`
+
+## Features
+
+- Runtime polymorphism through virtual methods and virtual destructors
+- Deep-copy semantics for dynamically allocated Brain members
+- Abstract base class that cannot be instantiated directly
+
 ## Structure
 
 | Exercise | Path | Binary |
