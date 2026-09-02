@@ -41,6 +41,18 @@ It evaluates true runtime polymorphism (virtual functions, virtual destructors, 
 - Review deep-copy handling for Brain ownership to avoid shared mutable state and leaks.
 - Notice the contrast between correct polymorphism and the intentionally wrong hierarchy.
 
+## Project Deep Dive
+
+CPP_04 moves from inheritance to runtime polymorphism. The Animal examples make it clear why virtual methods and virtual destructors matter when code works through base-class pointers and references.
+
+The Brain exercises add a memory-management layer: objects are no longer only polymorphic, they also own dynamic resources. That makes copy behavior important and gives reviewers a concrete place to check for shallow-copy bugs, leaks, and unsafe deletion.
+
+## Implementation Notes
+
+- Demonstrates correct and incorrect polymorphic dispatch through Animal and WrongAnimal hierarchies.
+- Uses deep copies for dynamically allocated Brain members.
+- Introduces abstract classes to prevent meaningless base objects from being instantiated.
+
 ## Structure
 
 | Exercise | Path | Binary |
